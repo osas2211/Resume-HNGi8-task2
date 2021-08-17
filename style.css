@@ -166,7 +166,8 @@ a {
     letter-spacing: 2px;
     opacity: 0.8; }
   .experience .small-head-2 {
-    font-weight: 400; }
+    font-weight: 400;
+    margin-bottom: 1rem; }
 
 .display-desktop {
   display: none; }
@@ -205,6 +206,8 @@ a {
     .skills_education .skills {
       margin-bottom: 2rem; }
   .experience {
-    text-align: center; }
-  .logo {
-    transform: translateX(110%); } }
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }

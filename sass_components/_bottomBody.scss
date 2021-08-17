@@ -9,6 +9,7 @@
 
     .small-head-2{
         font-weight: 400;
+        margin-bottom: 1rem;
     }
 }
 .display-desktop{
@@ -61,8 +62,10 @@
 
     .experience{
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .logo{
-        transform: translateX(110%);
-    }
+    
 }
