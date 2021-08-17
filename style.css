@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@200;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=WindSong&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #25ff9646;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Georama", Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  color: #042b18; }
+
+.container {
+  width: 85%;
+  margin: auto; }
+
+hr {
+  opacity: .5; }
+
+.right {
+  text-align: right; }
+
+.font-windsong {
+  font-family: "WindSong", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #08502d;
+  word-spacing: 1rem; }
+
+.resume {
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  box-shadow: 2px 12px 40px rgba(0, 0, 0, 0.575);
+  position: relative;
+  width: 80vw;
+  background-color: #fff;
+  overflow: hidden; }
+  .resume .style-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3fcf8911;
+    clip-path: polygon(100% 0%, 0% 0%, 0% 0%, 0% 70%); }
+  .resume .style-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3fcf8911;
+    clip-path: polygon(100% 30%, 0% 100%, 100% 100%); }
+
+.header {
+  display: flex;
+  margin-top: 6rem;
+  margin-bottom: 3rem; }
+  .header .profile_img {
+    width: 8rem;
+    height: 8rem;
+    margin-right: 2rem; }
+    .header .profile_img img {
+      width: 100%;
+      height: 100%; }
+  .header .name {
+    word-spacing: 5px; }
+    .header .name h2 {
+      margin-bottom: 2.5rem; }
+
+.heading {
+  text-transform: uppercase;
+  color: #157145;
+  font-family: "Overlock", Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700; }
+
+.heading-large {
+  font-size: 2rem; }
+
+.heading-small {
+  letter-spacing: 8px;
+  font-size: 1.3rem; }
+
+.mg-b {
+  margin-bottom: 2rem; }
+
+.mg-t {
+  margin-top: 2rem; }
+
+.about {
+  margin-top: 2rem; }
+
+.about-me {
+  display: flex;
+  justify-content: space-between; }
+  .about-me p {
+    padding-right: 3rem;
+    flex-basis: 70%; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-basis: 30%; }
+  ul li a {
+    color: inherit;
+    display: inline-block;
+    margin-right: 0.6rem;
+    padding: 0.2rem;
+    text-decoration: none;
+    transition: .5s all ease-in-out; }
+    ul li a:hover {
+      text-decoration: underline; }
+
+.font-grade {
+  font-family: "Satisfy", Arial, Helvetica, sans-serif; }
+
+.skills_education {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem; }
+
+.education {
+  position: relative; }
+
+.top-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  width: 100%;
+  background-color: #5dd199; }
+
+.bottom-color {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3rem;
+  width: 100%;
+  background-color: #5dd199; }
+
+.experience {
+  margin-bottom: 6rem; }
+  .experience .small-head, .experience .small-head-2 {
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    opacity: 0.8; }
+  .experience .small-head-2 {
+    font-weight: 400; }
+
+.display-desktop {
+  display: none; }
+
+@media (max-width: 700px) {
+  .resume {
+    width: 100vw;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .display-mobile {
+    display: none; }
+  .display-desktop {
+    display: block; }
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .header .profile_img {
+      margin-bottom: 2rem;
+      height: 12rem;
+      width: 12rem;
+      clip-path: circle(50% at 50% 50%); }
+  .about-me {
+    flex-direction: column;
+    text-align: center; }
+    .about-me p {
+      padding: 0;
+      margin-bottom: 2rem; }
+  .right {
+    text-align: center; }
+  .skills_education {
+    flex-direction: column;
+    text-align: center; }
+    .skills_education .skills {
+      margin-bottom: 2rem; }
+  .experience {
+    text-align: center; } }

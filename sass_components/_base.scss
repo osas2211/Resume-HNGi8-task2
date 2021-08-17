@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: $theme-color-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-main;
+    line-height: 25px;
+    color: $text-color;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+hr{
+    opacity: .5;
+}
+
+.right{
+    text-align: right;
+}
+.font-windsong{
+    font-family: $font-windsong;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #08502d;
+    word-spacing: 1rem;
+}
+
+.resume{
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+    box-shadow: 2px 12px 40px rgba(0, 0, 0, 0.575);
+    position: relative;
+    width: 80vw;
+    background-color: #fff;
+    overflow: hidden;
+    .style-1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $theme-color-light;
+        clip-path: polygon(100% 0%, 0% 0%, 0% 0%, 0% 70%);     }
+    .style-2{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $theme-color-light;
+        clip-path: polygon(100% 30%, 0% 100%, 100% 100%);
+    }
+}

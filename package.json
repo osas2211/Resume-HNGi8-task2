@@ -1,0 +1,15 @@
+{
+  "name": "resume-hng",
+  "version": "1.0.0",
+  "description": "HNGi8 Task2",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass main.scss style.css -w"
+  },
+  "author": "osaretin frank",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
