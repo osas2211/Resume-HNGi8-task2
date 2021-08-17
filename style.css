@@ -175,6 +175,7 @@ ul {
     text-align: center; }
     .header .profile_img {
       margin-bottom: 2rem;
+      margin-right: 0;
       height: 12rem;
       width: 12rem;
       clip-path: circle(50% at 50% 50%); }
