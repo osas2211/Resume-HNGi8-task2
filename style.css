@@ -146,6 +146,18 @@ ul {
   width: 100%;
   background-color: #5dd199; }
 
+.logo {
+  width: 8rem;
+  height: 8rem;
+  margin-top: 2rem;
+  margin-bottom: -1.7rem; }
+  .logo img {
+    width: 100%;
+    height: 100%; }
+
+a {
+  color: #157145; }
+
 .experience {
   margin-bottom: 6rem; }
   .experience .small-head, .experience .small-head-2 {
@@ -193,4 +205,6 @@ ul {
     .skills_education .skills {
       margin-bottom: 2rem; }
   .experience {
-    text-align: center; } }
+    text-align: center; }
+  .logo {
+    transform: translateX(110%); } }
