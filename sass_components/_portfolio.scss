@@ -1,0 +1,109 @@
+.center{
+    text-align: center;
+    color: $theme-color-primary;
+}
+
+.portfolio{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    &-flex{
+        width: 95%;
+        margin: auto;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.card{
+    height: 16rem;
+    width: 48%;
+    position: relative;
+}
+
+.front, .back{
+    position: absolute;
+    top: 0;
+    right: 0;
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    box-shadow: 2px 4px 25px rgba(0, 59, 27, 0.26);
+    transition: transform .7s linear;
+}
+.front{
+    transform: perspective(900px) rotateY(0deg);
+}
+.back{
+    transform: perspective(900px) rotateY(180deg);
+    background: linear-gradient(to right, $theme-color-primary-2, $theme-color-secondary);
+    color: rgb(227, 253, 237);
+    text-align: center;
+
+    &-content{
+        .small-head{
+            opacity: 1;
+            padding: 0.5rem;
+            border-bottom: 1px solid rgb(227, 253, 237);
+        }
+
+        .mg-t{
+            margin-top: 1rem;
+        }
+    }
+}
+
+.card:hover .front{
+    transform: perspective(900px) rotateY(-180deg);
+}
+
+.card:hover .back{
+    transform: perspective(900px) rotateY(0deg);
+}
+
+.stack{
+    color: $theme-color-primary;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+
+}
+
+.links a{
+    color: rgb(227, 253, 237);
+    font-size: 1.3rem;
+    display: inline-block;
+    margin: .5rem 1rem 0 1rem;
+    position: relative;
+}
+
+.links a::after{
+        content: attr(data-tool-tip);
+        position: absolute;
+        display: inline-block;
+        bottom: 0;
+        left: -20%;
+        transform: translate(-50%,-110%) scale(0);
+        text-align: center;
+        padding: 0 0.5rem 0 .5rem;
+        width: 6rem;
+        font-size: 12px;
+        background-color: rgb(227, 253, 237);
+        color: $text-color;
+        border-radius: 15px;
+        transition: all .5s ease-out;
+
+}
+
+.links a:hover {
+    &::after{
+        transform: translate(0%,-100%) scale(1);
+    }
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
