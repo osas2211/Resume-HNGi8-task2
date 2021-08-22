@@ -16,6 +16,31 @@ a {
   width: 90%;
   margin: auto; }
 
+.btn {
+  display: inline-block;
+  background-color: inherit;
+  border-radius: 7px;
+  border: 1px solid #2E0E02;
+  text-transform: uppercase;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden; }
+  .btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -110%;
+    left: 0rem;
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.7);
+    background-color: #2E0E02;
+    transition: all .5s ease-in; }
+
+.btn:hover::after {
+  bottom: 110%; }
+
 .active {
   background-color: #96705B; }
 
@@ -384,6 +409,15 @@ a {
 .links a:hover::after {
   transform: translate(0%, -100%) scale(1); }
 
+.contact {
+  text-align: center;
+  font-family: "Raleway";
+  padding: 2rem 25rem;
+  background-color: #F1FAEE; }
+  .contact i {
+    font-size: 5rem;
+    color: #2E0E02; }
+
 @media (max-width: 990px) {
   .passion .flex {
     flex-wrap: wrap;
@@ -393,7 +427,7 @@ a {
       width: 100%;
       padding: 0;
       margin-top: 3rem; }
-  .about, .passion, .experience {
+  .about, .passion, .experience, .contact {
     padding-left: 0rem;
     padding-right: 0rem; } }
 
