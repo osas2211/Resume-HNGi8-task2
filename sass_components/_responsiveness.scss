@@ -1,3 +1,24 @@
+@media (max-width:990px) {
+    .passion{
+        .flex{
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            .passion_icon{
+                width: 100%;
+                padding: 0;
+                margin-top: 3rem;
+
+            }
+        }
+    }
+
+    .about, .passion, .experience{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
 @media (max-width:700px) {
     .desktop-nav{
         display: none;

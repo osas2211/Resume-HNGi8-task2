@@ -251,7 +251,8 @@ a {
   font-family: "Raleway";
   line-height: 1.6rem; }
   .passion h4 {
-    opacity: 0.7; }
+    opacity: 0.7;
+    line-height: 2rem; }
   .passion i {
     background-color: #2E0E02;
     display: inline-block;
@@ -382,6 +383,19 @@ a {
 
 .links a:hover::after {
   transform: translate(0%, -100%) scale(1); }
+
+@media (max-width: 990px) {
+  .passion .flex {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    .passion .flex .passion_icon {
+      width: 100%;
+      padding: 0;
+      margin-top: 3rem; }
+  .about, .passion, .experience {
+    padding-left: 0rem;
+    padding-right: 0rem; } }
 
 @media (max-width: 700px) {
   .desktop-nav {
