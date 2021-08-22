@@ -4,11 +4,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    background-attachment: fixed;
     text-align: center;
     color: $color-text;
     text-transform: uppercase;
     font-family: $font-primary;
     margin: 0;
+    backface-visibility: hidden;
+    
 
     h2{
         font-size: 4rem;
@@ -16,6 +19,14 @@
         letter-spacing: 6px;
         word-spacing: 4px;
         padding: 2rem;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+    p{
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
     }
 }
 

@@ -8,6 +8,11 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    backface-visibility: hidden;
+    transition: .5s ease-in-out;
+}
+
 
 a{
     color: $color-text;
