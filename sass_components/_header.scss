@@ -1,39 +1,43 @@
-.header{
+.main-header{
     display: flex;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
-    .profile_img{
-        width: 8rem;
-        height: 8rem;
-        margin-right: 2rem;
-
-        img{
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-
-    .name{
-        word-spacing: 5px;
-        h2{
-            margin-bottom: 2.5rem;
-        }
-    }
-}
-
-.heading {
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: $color-strong;
+    color: $color-BgText;
     text-transform: uppercase;
-    color: $theme-color-primary;
-    font-family: $font-heading;
-    letter-spacing: 2px;
-    font-weight: 700;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 1.1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    i{
+        padding-right: 0.5rem;
+        font-size: 1.3rem;
+    }
 }
 
-.heading-large{
-    font-size: 2rem;
-}
-.heading-small{
-    letter-spacing: 8px;
-    font-size: 1.3rem;
+.desktop-nav{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    li{
+        padding: 1rem;
+        font-size: 0.9rem;
+        &:not(:last-child){
+            padding-right: 0.8rem;
+        }
+
+        a{
+            color: $color-BgText;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
 }

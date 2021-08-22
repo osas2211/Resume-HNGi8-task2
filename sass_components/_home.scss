@@ -1,0 +1,38 @@
+.home{
+    height: 95vh;
+    background: url(./img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+    color: $color-text;
+    text-transform: uppercase;
+    font-family: $font-primary;
+    margin: 0;
+
+    h2{
+        font-size: 4rem;
+        font-weight: 400;
+        letter-spacing: 6px;
+        word-spacing: 4px;
+        padding: 2rem;
+    }
+}
+
+.down{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-strong;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+    i{
+        font-size: 3rem;
+        color: $color-BgText;
+    }
+
+    &:hover{
+        opacity: 0.8;
+    }
+}

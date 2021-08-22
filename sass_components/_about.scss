@@ -1,0 +1,36 @@
+.about{
+    background-color: $color-bg-1;
+    color: $color-text;
+    margin: 0;
+    text-align: center;
+    font-family: $font-secondary;
+    line-height: 1.6rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    span{
+        color: $highlight;
+    }
+
+}
+
+.self{
+    background-color: $color-BgText;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    i{
+        font-size: 3rem;
+    }
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

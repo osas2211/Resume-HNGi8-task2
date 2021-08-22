@@ -1,0 +1,48 @@
+.experience{
+    background-color: $color-bg-1;
+    color: $color-text;
+    margin: 0;
+    text-align: center;
+    font-family: $font-secondary;
+    line-height: 1.6rem;
+    padding: 4rem 15rem 4rem 15rem;
+}
+
+.skills{
+    .skills_text{
+        text-transform: uppercase;
+        opacity: 0.7;
+        font-size: 1.2rem;
+    }
+    .stack{
+        p{
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(to right, $color-primary, #96705bd7);
+            margin: 1rem;
+            color: $color-BgText;
+            box-shadow: 2px 4px 10px #2e0e0271;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            transition: all .3s ease-in-out;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    
+
+}
+
+.organizations{
+    .org{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+            color: $highlight;
+        }
+    }
+}

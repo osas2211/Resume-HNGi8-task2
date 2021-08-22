@@ -1,25 +1,26 @@
-.center{
+.work{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     text-align: center;
-    color: $theme-color-primary;
-}
+    background-color: $color-BgText;
 
-.portfolio{
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    &-flex{
-        width: 95%;
-        margin: auto;
-        margin-top: 2rem;
-        display: flex;
-        justify-content: space-between;
+    .flex{
         flex-wrap: wrap;
     }
 }
 
 .card{
-    height: 16rem;
-    width: 48%;
+    height: 30rem;
+    width: 27%;
     position: relative;
+    font-family: $font-primary;
+    margin-bottom: 3rem;
+    .front{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 .front, .back{
@@ -29,7 +30,7 @@
     backface-visibility: hidden;
     height: 100%;
     width: 100%;
-    box-shadow: 2px 4px 25px rgba(0, 59, 27, 0.26);
+    box-shadow: 2px 4px 10px #2e0e0271;
     transition: transform .7s linear;
 }
 .front{
@@ -37,12 +38,14 @@
 }
 .back{
     transform: perspective(900px) rotateY(180deg);
-    background: linear-gradient(to right, $theme-color-primary-2, $theme-color-secondary);
-    color: rgb(227, 253, 237);
+    background: linear-gradient(to right, #836250, #b98366);
+    color: $color-BgText;
     text-align: center;
+    
 
     &-content{
-        .small-head{
+        padding: 2rem;
+        .heading-sm{
             opacity: 1;
             padding: 0.5rem;
             border-bottom: 1px solid rgb(227, 253, 237);
@@ -62,8 +65,8 @@
     transform: perspective(900px) rotateY(0deg);
 }
 
-.stack{
-    color: $theme-color-primary;
+.stack-2{
+    color: $color-strong;
     text-transform: uppercase;
     margin-top: 0.5rem;
 
@@ -89,7 +92,7 @@
         width: 6rem;
         font-size: 12px;
         background-color: rgb(227, 253, 237);
-        color: $text-color;
+        color: $color-text;
         border-radius: 15px;
         transition: all .5s ease-out;
 
@@ -99,11 +102,4 @@
     &::after{
         transform: translate(0%,-100%) scale(1);
     }
-}
-
-.middle{
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
 }

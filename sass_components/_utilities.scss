@@ -1,0 +1,103 @@
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.active{
+    background-color: $color-primary;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.middleX{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mt-1{
+    margin-top: 1rem;
+}
+
+.mt-2{
+    margin-top: 2rem;
+}
+.mt-3{
+    margin-top: 3rem;
+}
+
+.mt-4{
+    margin-top: 4rem;
+}
+
+.mt-5{
+    margin-top: 5rem;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+.mb-3{
+    margin-bottom: 3rem;
+}
+
+.mb-4{
+    margin-bottom: 4rem;
+}
+
+.mb-5{
+    margin-bottom: 5rem;
+}
+
+.photo{
+    height: 10rem;
+    width: 10rem;
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+.circle{
+    clip-path: circle(50% at 50% 50%);
+}
+
+.heading-lg{
+    font-family: $font-secondary;
+    font-weight: 200;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.heading-md{
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.heading-sm, .heading-sm-2{
+    font-family: $font-secondary;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.heading-sm-2{
+    opacity: 0.5;
+}

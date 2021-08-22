@@ -1,6 +1,14 @@
 @import "sass_components/variables";
 @import "sass_components/base";
+@import "sass_components/utilities";
+@import "sass_components/buttons";
+@import "sass_components/home";
 @import "sass_components/header";
-@import "sass_components/topBody";
-@import "sass_components/portfolio";
-@import "sass_components/bottomBody";
+@import "sass_components/mobile";
+@import "sass_components/about";
+@import "sass_components/passion";
+@import "sass_components/experience";
+@import "sass_components/work";
+@import "sass_components/contact";
+@import "sass_components/footer";
+@import "sass_components/responsiveness";
