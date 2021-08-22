@@ -16,6 +16,34 @@ a {
   width: 90%;
   margin: auto; }
 
+.icons i {
+  display: inline-block;
+  color: #2E0E02;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: #96705B;
+  transition: .5s ease-in-out; }
+
+.icons .fa-facebook:hover {
+  background-color: #304C89;
+  color: #fff; }
+
+.icons .fa-twitter:hover {
+  background-color: #6a8bd1fa;
+  color: #fff; }
+
+.icons .fa-instagram:hover {
+  background-color: #f54773;
+  color: #fff; }
+
+.icons .fa-linkedin:hover {
+  background-color: #304C89;
+  color: #fff; }
+
+.icons .fa-github:hover {
+  background-color: rgba(0, 0, 0, 0.822);
+  color: #fff; }
+
 .btn {
   display: inline-block;
   background-color: inherit;
@@ -417,6 +445,13 @@ a {
   .contact i {
     font-size: 5rem;
     color: #2E0E02; }
+
+.footer {
+  padding: 3rem;
+  text-align: center;
+  background-color: #2E0E02;
+  color: #EFEBCE;
+  font-family: "Raleway"; }
 
 @media (max-width: 990px) {
   .passion .flex {

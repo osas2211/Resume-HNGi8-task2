@@ -3,6 +3,41 @@
     margin: auto;
 }
 
+.icons{
+    i{
+        display: inline-block;
+        color: $color-strong;
+        font-size: 1.5rem;
+        padding: 1rem;
+        background-color: $color-primary;
+        transition: .5s ease-in-out;
+    }
+
+    .fa-facebook:hover{
+        background-color: #304C89;
+        color: #fff
+    }
+
+    .fa-twitter:hover{
+        background-color: #6a8bd1fa;
+        color: #fff
+    }
+
+    .fa-instagram:hover{
+        background-color: #f54773;
+        color: #fff
+    }
+
+    .fa-linkedin:hover{
+        background-color: #304C89;
+        color: #fff
+    }
+    .fa-github:hover{
+        background-color: rgba(0, 0, 0, 0.822);
+        color: #fff
+    }
+}
+
 .btn{
     display: inline-block;
     background-color: inherit;
